@@ -47,7 +47,7 @@ export default function Testimonial() {
             What our clients say about us
           </p>
 
-          <div className="relative bg-white rounded-lg shadow pl-8">
+          <div className="relative bg-white rounded-lg shadow pl-8 min-h-[200px] transition-all duration-300">
             {/* Decorative Quote Icon */}
             <div className="absolute top-6 left-6 w-8 h-8 bg-red-600 flex items-center justify-center rounded">
               <span className="text-white text-lg font-bold">"</span>
@@ -58,7 +58,7 @@ export default function Testimonial() {
               <p className="text-gray-600 leading-relaxed pl-10 pt-5">
                 {currentTestimonial.text}
               </p>
-              <div className="text-center pl-72 pb-6">
+              <div className="text-center pl-72 pb-6 pt-5">
                 <h4 className="font-bold text-gray-800">
                   {currentTestimonial.author}
                 </h4>

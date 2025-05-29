@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import { ChevronRight, Phone, MapPin, Facebook, Twitter, Instagram, Dribbble, Rss, Copyright } from 'lucide-react';
+import men from "../image/men.jpg"
+import work from "../image/work.jpg";
+import art from "../image/art.jpg";
+import car from "../image/car.jpg";
+import chip from "../image/chip.jpg";
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -133,42 +138,42 @@ export default function Footer() {
               <div className="grid grid-cols-3 gap-2">
                 <div className="aspect-square bg-slate-600 rounded overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" 
+                    src={men} 
                     alt="Gallery item" 
                     className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                   />
                 </div>
                 <div className="aspect-square bg-slate-600 rounded overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
+                    src={work} 
                     alt="Gallery item" 
                     className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                   />
                 </div>
                 <div className="aspect-square bg-slate-600 rounded overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1541961017774-22349e4a1262" 
+                    src={art} 
                     alt="Gallery item" 
                     className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                   />
                 </div>
                 <div className="aspect-square bg-slate-600 rounded overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000" 
+                    src={car} 
                     alt="Gallery item" 
                     className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                   />
                 </div>
                 <div className="aspect-square bg-slate-600 rounded overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1518770660439-4636190af475" 
+                    src={chip}
                     alt="Gallery item" 
                     className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                   />
                 </div>
                 <div className="aspect-square bg-slate-600 rounded overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" 
+                    src={men}
                     alt="Gallery item" 
                     className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                   />

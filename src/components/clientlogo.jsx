@@ -67,7 +67,6 @@ export default function ClientLogos() {
   return (
     <div className="bg-white py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Container with border */}
         <div className="border border-gray-300 rounded-lg p-8">
           {/* Logos Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">

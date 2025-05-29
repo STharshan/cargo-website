@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import men from "../image/men.jpg";
+import factory from "../image/factory.jpg";
 
 export default function Section() {
   return (
@@ -13,7 +15,7 @@ export default function Section() {
               {/* Image 1 - Hard Hat */}
               <div className="relative overflow-hidden rounded-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop"
+                  src={men}
                   alt="Construction worker wearing a hard hat"
                   className="w-full h-full object-cover"
                 />
@@ -25,7 +27,7 @@ export default function Section() {
               {/* Image 2 - Clipboard */}
               <div className="relative overflow-hidden rounded-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=200&fit=crop"
+                  src={factory}
                   alt="Worker holding a clipboard"
                   className="w-full h-full object-cover"
                 />

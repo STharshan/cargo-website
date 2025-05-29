@@ -42,3 +42,5 @@ Author
     Name: Sivanantharasa Tharsan
     Email: sivatharshan81@gmail.com 
     Github: https://github.com/STharshan 
+
+I spent 12 hours to complete this development task and 3 hours to complete this design task

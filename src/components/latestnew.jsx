@@ -1,11 +1,16 @@
 import { User } from 'lucide-react';
+import science from '../image/science.jpg';
+import factory from '../image/factory.jpg';
+import plane from '../image/plane.jpg';
+import cargo from '../image/cargo.jpg';
+
 
 export default function LatestNews() {
   const newsItems = [
     {
       id: 1,
       date: { day: '26', month: 'MAY' },
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop',
+      image: science,
       title: 'CURABITUR LOREM UISUI QUIS',
       author: 'Admin',
       comments: 15,
@@ -15,7 +20,7 @@ export default function LatestNews() {
     {
       id: 2,
       date: { day: '22', month: 'MAY' },
-      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop',
+      image: factory,
       title: 'CURABITUR LOREM UISUI QUIS',
       author: 'Admin',
       comments: 15,
@@ -25,7 +30,7 @@ export default function LatestNews() {
     {
       id: 3,
       date: { day: '20', month: 'MAY' },
-      image: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=400&h=300&fit=crop',
+      image: plane,
       title: 'CURABITUR LOREM UISUI QUIS',
       author: 'Admin',
       comments: 15,
@@ -35,7 +40,7 @@ export default function LatestNews() {
     {
       id: 4,
       date: { day: '15', month: 'MAY' },
-      image: 'https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=400&h=300&fit=crop',
+      image: cargo,
       title: 'CURABITUR LOREM UISUI QUIS',
       author: 'Admin',
       comments: 15,

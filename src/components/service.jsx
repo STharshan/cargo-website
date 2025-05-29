@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import { ArrowRight, Plane, Ship, Truck, Package } from 'lucide-react';
+import cargo from '../image/cargo.jpg';
+import plane from '../image/plane.jpg';
+import science from '../image/science.jpg';
+import factory from '../image/factory.jpg';
 
 export default function Service() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -9,28 +13,28 @@ export default function Service() {
       id: 1,
       title: "Air Freight Services",
       description: "We understand how difficult it can be to find reliable air freight services. We make it easier.",
-      image: "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=600&h=400&fit=crop",
+      image: cargo,
       icon: <Ship className="w-8 h-8 text-white" />
     },
     {
       id: 2,
       title: "Drone Services",
       description: "Tailored drone logistics for industry-specific challenges, backed by years of expertise.",
-      image: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=600&h=400&fit=crop",
+      image: plane,
       icon: <Plane className="w-8 h-8 text-white" />
     },
     {
       id: 3,
       title: "Ground Transport",
       description: "Efficient land transportation across multiple destinations, keeping your cargo secure.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+      image: science,
       icon: <Truck className="w-8 h-8 text-white" />
     },
     {
       id: 4,
       title: "Warehouse Solutions",
       description: "Modern storage facilities and real-time inventory systems to streamline your supply chain.",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop",
+      image: factory,
       icon: <Package className="w-8 h-8 text-white" />
     }
   ];
@@ -55,10 +59,9 @@ export default function Service() {
 
         {/* Solutions Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {solutions.slice(0, 2).map((solution) => (
+          {solutions.slice(currentSlide * 2, currentSlide * 2 + 2).map((solution) => (
             <div key={solution.id} className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-2xl h-64">
-
                 {/* Background Image */}
                 <img
                   src={solution.image}
@@ -117,8 +120,8 @@ export default function Service() {
                 onClick={() => handleSlideChange(index)}
                 aria-label={`Go to slide ${index + 1}`}
                 className={`w-3 h-3 rounded-full transition-colors ${currentSlide === index
-                    ? 'bg-green-500'
-                    : 'bg-gray-300 hover:bg-gray-400'
+                  ? 'bg-green-500'
+                  : 'bg-gray-300 hover:bg-gray-400'
                   }`}
               />
             ))}
